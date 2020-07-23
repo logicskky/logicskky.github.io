@@ -1,7 +1,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>LogicSkky&#39;s Blog on LogicSkky&#39;s Blog</title>
-    <link>http://example.org/</link>
+    <link>https://logicskky.github.io/</link>
     <description>Recent content in LogicSkky&#39;s Blog on LogicSkky&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
@@ -10,10 +10,10 @@
     
     <item>
       <title>Posts</title>
-      <link>http://example.org/posts/</link>
+      <link>https://logicskky.github.io/posts/</link>
       <pubDate>Thu, 23 Jul 2020 17:41:59 +0800</pubDate>
       
-      <guid>http://example.org/posts/</guid>
+      <guid>https://logicskky.github.io/posts/</guid>
       <description></description>
     </item>
     

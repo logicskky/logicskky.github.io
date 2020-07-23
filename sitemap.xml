@@ -2,7 +2,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
     <url>
-      <loc>http://example.org/2020/helloworld/</loc>
+      <loc>https://logicskky.github.io/2020/helloworld/</loc>
       
       <lastmod>2020-07-23T17:41:59+08:00</lastmod>
       
@@ -12,7 +12,7 @@
     </url>
   
     <url>
-      <loc>http://example.org/</loc>
+      <loc>https://logicskky.github.io/</loc>
       
       <lastmod>2020-07-23T17:41:59+08:00</lastmod>
       
@@ -22,7 +22,7 @@
     </url>
   
     <url>
-      <loc>http://example.org/posts/</loc>
+      <loc>https://logicskky.github.io/posts/</loc>
       
       <lastmod>2020-07-23T17:41:59+08:00</lastmod>
       
@@ -32,7 +32,7 @@
     </url>
   
     <url>
-      <loc>http://example.org/categories/</loc>
+      <loc>https://logicskky.github.io/categories/</loc>
       
       
       
@@ -40,7 +40,7 @@
     </url>
   
     <url>
-      <loc>http://example.org/tags/</loc>
+      <loc>https://logicskky.github.io/tags/</loc>
       
       
       
