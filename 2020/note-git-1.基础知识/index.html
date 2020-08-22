@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+  <meta http-equiv="content-type" content="text/html;charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noodp"/>
+  <meta name="author" content="Wang Kefeng">
+  <meta name="description" content="LogicSkky&#39;s Blog.">
+  <meta name="keywords" content="logicskky,blog,c,linux,vim,博客">
+  
+  <link rel="prev" href="https://logicskky.github.io/2020/hello-world/" />
+  
+  <link rel="canonical" href="https://logicskky.github.io/2020/note-git-1.%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <title>
+       
+       
+           [Note] Git-1.基础知识 | LogicSkky&#39;s Blog
+       
+  </title>
+  <meta name="title" content="[Note] Git-1.基础知识 | LogicSkky&#39;s Blog">
+    
+  
+  <link rel="stylesheet" href="/font/iconfont.css">
+  <link rel="stylesheet" href="/css/main.min.css">
+
+
+  
+  
+ 
+
+<script type="application/ld+json">
+ "@context" : "http://schema.org",
+    "@type" : "BlogPosting",
+    "mainEntityOfPage": {
+         "@type": "WebPage",
+         "@id": "https:\/\/logicskky.github.io"
+    },
+    "articleSection" : "posts",
+    "name" : "[Note] Git-1.基础知识",
+    "headline" : "[Note] Git-1.基础知识",
+    "description" : "Git 基础知识  关于版本控制系统  本地版本控制系统 集中化的版本控制系统 分布式版本控制系统   Git 简史 Git 的特点 Git 仓库内的文件的三种状态  关于版本控制系统 版本控制系统（Version Control Systems，简称VCS）是一种记录一个或若干文件内容变化，以便将来查阅特定版本修订情况的系统。\n本地版本控制系统 本地版本控制系统大多都是采用某种简单的数据库来记录文件的历次更新差异。\n集中化的版本控制系统 集中化的版本控制系统（Centralized Version Control Systems，简称 CVCS），用一个单一的集中管理的服务器，保存所有文件的修订版本，而协同工作的人们都通过客户端连到这台服务器，取出最新的文件或者提交更新。\n分布式版本控制系统 分布式版本控制系统（Distributed Version Control System，简称 DVCS），不像集中化的版本控制系统只提取最新版本的文件快照， 而是把代码仓库完整地镜像下来，包括完整的历史记录。\nGit 简史  整理自 1.2 起步 - Git 简史\n 在 1991 - 2002 年间，绝大多数的 Linux 内核维护工作都花在了提交补丁和保存归档的繁琐事务上。\n从 2002 年开始，整个项目组开始使用分布式版本控制系统 BitKeeper 类管理和维护代码。\n但是在 2005 年，开发 BitKeeper 的商业公司同 Linux 内核开源社区的合作关系结束，他们收回了 Linux 内核社区免费使用 BitKeeper 的权力。\n于是，Linux 开源社区（特别是 Linus Torvalds）准备开发自己的版本控制系统。他们对新的版本控制系统制定了若干目标：",
+    "inLanguage" : "zh-cn",
+    "author" : "Wang Kefeng",
+    "creator" : "Wang Kefeng",
+    "publisher": "Wang Kefeng",
+    "accountablePerson" : "Wang Kefeng",
+    "copyrightHolder" : "Wang Kefeng",
+    "copyrightYear" : "2020",
+    "datePublished": "2020-08-22 22:01:14 \u002b0800 CST",
+    "dateModified" : "2020-08-22 22:01:14 \u002b0800 CST",
+    "url" : "https:\/\/logicskky.github.io\/2020\/note-git-1.%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86\/",
+    "wordCount" : "90",
+    "keywords" : [ "Note, Git", "LogicSkky\u0027s Blog"]
+}
+</script>
+
+</head>
+
+  
+
+
+  <body class="">
+    <div class="wrapper">
+        <nav class="navbar">
+    <div class="container">
+        <div class="navbar-header header-logo">
+        	<a href="javascript:void(0);" class="theme-switch"><i class="iconfont icon-xihuan"></i></a>&nbsp;<a href="https://logicskky.github.io">LogicSkky&#39;s Blog</a>
+        </div>
+        <div class="menu navbar-right">
+                
+                
+                <a class="menu-item" href="/" title="">Home</a>
+                
+                <a class="menu-item" href="/posts/" title="">Blog</a>
+                
+                <a class="menu-item" href="/categories/" title="">Categories</a>
+                
+                <a class="menu-item" href="/tags/" title="">Tags</a>
+                
+                <a class="menu-item" href="/about/" title="">About</a>
+                
+        </div>
+    </div>
+</nav>
+<nav class="navbar-mobile" id="nav-mobile" style="display: none">
+     <div class="container">
+        <div class="navbar-header">
+            <div>  <a href="javascript:void(0);" class="theme-switch"><i class="iconfont icon-xihuan"></i></a>&nbsp;<a href="https://logicskky.github.io">LogicSkky&#39;s Blog</a></div>
+            <div class="menu-toggle">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+     
+          <div class="menu" id="mobile-menu">
+                
+                
+                <a class="menu-item" href="/" title="">Home</a>
+                
+                <a class="menu-item" href="/posts/" title="">Blog</a>
+                
+                <a class="menu-item" href="/categories/" title="">Categories</a>
+                
+                <a class="menu-item" href="/tags/" title="">Tags</a>
+                
+                <a class="menu-item" href="/about/" title="">About</a>
+                
+        </div>
+    </div>
+</nav>
+    	 <main class="main">
+          <div class="container">
+      		
+<article class="post-warp" itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">[Note] Git-1.基础知识</h1>
+        <div class="post-meta">
+                Written by <a itemprop="name" href="https://logicskky.github.io" rel="author">Wang Kefeng</a> with ♥ 
+                <span class="post-time">
+                on <time datetime=2020-08-22 itemprop="datePublished">August 22, 2020</time>
+                </span>
+                in
+                <i class="iconfont icon-folder"></i>
+                <span class="post-category">
+                        <a href="https://logicskky.github.io/categories/note/"> Note </a>
+                        
+                </span>
+        </div>
+    </header>
+    <div class="post-content">
+        
+
+        
+
+        
+        
+     
+          
+          
+          
+
+          
+          
+          
+
+          <h1 id="git-基础知识">Git 基础知识</h1>
+<!-- vim-markdown-toc GFM -->
+<ul>
+<li><a href="#%E5%85%B3%E4%BA%8E%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6%E7%B3%BB%E7%BB%9F">关于版本控制系统</a>
+<ul>
+<li><a href="#%E6%9C%AC%E5%9C%B0%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6%E7%B3%BB%E7%BB%9F">本地版本控制系统</a></li>
+<li><a href="#%E9%9B%86%E4%B8%AD%E5%8C%96%E7%9A%84%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6%E7%B3%BB%E7%BB%9F">集中化的版本控制系统</a></li>
+<li><a href="#%E5%88%86%E5%B8%83%E5%BC%8F%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6%E7%B3%BB%E7%BB%9F">分布式版本控制系统</a></li>
+</ul>
+</li>
+<li><a href="#git-%E7%AE%80%E5%8F%B2">Git 简史</a></li>
+<li><a href="#git-%E7%9A%84%E7%89%B9%E7%82%B9">Git 的特点</a></li>
+<li><a href="#git-%E4%BB%93%E5%BA%93%E5%86%85%E7%9A%84%E6%96%87%E4%BB%B6%E7%9A%84%E4%B8%89%E7%A7%8D%E7%8A%B6%E6%80%81">Git 仓库内的文件的三种状态</a></li>
+</ul>
+<!-- vim-markdown-toc -->
+<h2 id="关于版本控制系统">关于版本控制系统</h2>
+<p>版本控制系统（Version Control Systems，简称VCS）是一种记录一个或若干文件内容变化，以便将来查阅特定版本修订情况的系统。</p>
+<h3 id="本地版本控制系统">本地版本控制系统</h3>
+<p>本地版本控制系统大多都是采用某种简单的数据库来记录文件的历次更新差异。</p>
+<h3 id="集中化的版本控制系统">集中化的版本控制系统</h3>
+<p>集中化的版本控制系统（Centralized Version Control Systems，简称 CVCS），用一个单一的集中管理的服务器，保存所有文件的修订版本，而协同工作的人们都通过客户端连到这台服务器，取出最新的文件或者提交更新。</p>
+<h3 id="分布式版本控制系统">分布式版本控制系统</h3>
+<p>分布式版本控制系统（Distributed Version Control System，简称 DVCS），不像集中化的版本控制系统只提取最新版本的文件快照， 而是把代码仓库完整地镜像下来，包括完整的历史记录。</p>
+<h2 id="git-简史">Git 简史</h2>
+<blockquote>
+<p>整理自 <a href="https://git-scm.com/book/zh/v2/%E8%B5%B7%E6%AD%A5-Git-%E7%AE%80%E5%8F%B2">1.2 起步 - Git 简史</a></p>
+</blockquote>
+<p>在 1991 - 2002 年间，绝大多数的 Linux 内核维护工作都花在了提交补丁和保存归档的繁琐事务上。</p>
+<p>从 2002 年开始，整个项目组开始使用分布式版本控制系统 BitKeeper 类管理和维护代码。</p>
+<p>但是在 2005 年，开发 BitKeeper 的商业公司同 Linux 内核开源社区的合作关系结束，他们收回了 Linux 内核社区免费使用 BitKeeper 的权力。</p>
+<p>于是，Linux 开源社区（特别是 Linus Torvalds）准备开发自己的版本控制系统。他们对新的版本控制系统制定了若干目标：</p>
+<ul>
+<li>速度</li>
+<li>简单的设计</li>
+<li>对非线性开发模式的强力支持（允许成千上万个并行开发的分支）</li>
+<li>完全分布式</li>
+<li>有能力高效管理类似 Linux 内核一样的超大规模项目（速度和数据量）</li>
+</ul>
+<p>自诞生于 2005 年以来，Git 日臻成熟完善，也仍然保留着初期设定的目标。它的速度飞快，极其适合管理大项目，有着令人难以置信的非线性分支管理系统。</p>
+<h2 id="git-的特点">Git 的特点</h2>
+<ul>
+<li>直接记录快照，而非差异比较</li>
+<li>近乎所有操作都是本地执行</li>
+<li>Git 保证完整性</li>
+<li>Git 一般只添加数据</li>
+</ul>
+<h2 id="git-仓库内的文件的三种状态">Git 仓库内的文件的三种状态</h2>
+<ul>
+<li>已修改（modified）：修改了文件，但还没保存到数据库中</li>
+<li>已暂存（staged）：对一个已修改文件的当前版本做了标记，使之包含在下次提交的快照中</li>
+<li>已提交（committed）：数据已经安全地保存在本地数据库中</li>
+</ul>
+
+    </div>
+
+    <div class="post-copyright">
+             
+            <p class="copyright-item">
+                <span>Author:</span>
+                <span>Wang Kefeng </span>
+                </p>
+            
+           
+             
+            <p class="copyright-item">
+                    <span>Link:</span>
+                    <a href=https://logicskky.github.io/2020/note-git-1.%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/>https://logicskky.github.io/2020/note-git-1.%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/</span>
+            </p>
+            
+             
+            <p class="copyright-item lincese">
+                本文采用<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/" target="_blank">知识共享署名-非商业性使用 4.0 国际许可协议</a>进行许可
+            </p>
+            
+    </div>
+
+  
+    <div class="post-tags">
+        
+            <section>
+            <i class="iconfont icon-tag"></i>Tag(s): 
+            
+            <span class="tag"><a href="https://logicskky.github.io/tags/note-git/">
+                    #Note, Git</a></span>
+            
+            </section>
+        
+        <section>
+                <a href="javascript:window.history.back();">back</a></span> · 
+                <span><a href="https://logicskky.github.io">home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav">
+        
+        <a href="https://logicskky.github.io/2020/hello-world/" class="prev" rel="prev" title="Hello World"><i class="iconfont icon-left"></i>&nbsp;Hello World</a>
+         
+        
+    </div>
+
+    <div class="post-comment">
+          
+                 
+          
+    </div>
+</article>
+          </div>
+		   </main>
+      <footer class="footer">
+    <div class="copyright">
+        &copy;
+        
+        <span itemprop="copyrightYear">2020 - 2020</span>
+        
+        <span class="with-love">
+    	 <i class="iconfont icon-love"></i> 
+         </span>
+         
+            <span class="author" itemprop="copyrightHolder"><a href="https://logicskky.github.io">Wang Kefeng</a> | </span> 
+         
+
+         
+		  <span>Powered by <a href="https://gohugo.io/" target="_blank" rel="external nofollow">Hugo</a> & <a href="https://github.com/liuzc/leaveit" target="_blank" rel="external nofollow">LeaveIt</a></span> 
+    </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+    <script src="/js/vendor_no_gallery.min.js" async=""></script>
+    
+  
+
+
+
+     </div>
+  </body>
+</html>

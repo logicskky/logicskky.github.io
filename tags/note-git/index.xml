@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on LogicSkky&#39;s Blog</title>
-    <link>https://logicskky.github.io/posts/</link>
-    <description>Recent content in Posts on LogicSkky&#39;s Blog</description>
+    <title>Note, Git on LogicSkky&#39;s Blog</title>
+    <link>https://logicskky.github.io/tags/note-git/</link>
+    <description>Recent content in Note, Git on LogicSkky&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Sat, 22 Aug 2020 22:01:14 +0800</lastBuildDate>
     
-	<atom:link href="https://logicskky.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://logicskky.github.io/tags/note-git/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -26,17 +26,6 @@ Git 简史  整理自 1.2 起步 - Git 简史
 从 2002 年开始，整个项目组开始使用分布式版本控制系统 BitKeeper 类管理和维护代码。
 但是在 2005 年，开发 BitKeeper 的商业公司同 Linux 内核开源社区的合作关系结束，他们收回了 Linux 内核社区免费使用 BitKeeper 的权力。
 于是，Linux 开源社区（特别是 Linus Torvalds）准备开发自己的版本控制系统。他们对新的版本控制系统制定了若干目标：</description>
-    </item>
-    
-    <item>
-      <title>Hello World</title>
-      <link>https://logicskky.github.io/2020/hello-world/</link>
-      <pubDate>Thu, 23 Jul 2020 17:41:59 +0800</pubDate>
-      
-      <guid>https://logicskky.github.io/2020/hello-world/</guid>
-      <description>Finally!!!
-Loading&amp;hellip;
-   </description>
     </item>
     
   </channel>
