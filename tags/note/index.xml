@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Note, Git on LogicSkky&#39;s Blog</title>
-    <link>https://logicskky.github.io/tags/note-git/</link>
-    <description>Recent content in Note, Git on LogicSkky&#39;s Blog</description>
+    <title>Note on LogicSkky&#39;s Blog</title>
+    <link>https://logicskky.github.io/tags/note/</link>
+    <description>Recent content in Note on LogicSkky&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Sat, 22 Aug 2020 22:01:14 +0800</lastBuildDate>
     
-	<atom:link href="https://logicskky.github.io/tags/note-git/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://logicskky.github.io/tags/note/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
