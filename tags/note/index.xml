@@ -6,10 +6,26 @@
     <description>Recent content in Note on LogicSkky&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sat, 22 Aug 2020 22:01:14 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 23 Aug 2020 22:05:50 +0800</lastBuildDate>
     
 	<atom:link href="https://logicskky.github.io/tags/note/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>[Nore] Git-2.配置</title>
+      <link>https://logicskky.github.io/2020/note-git-2.%E9%85%8D%E7%BD%AE/</link>
+      <pubDate>Sun, 23 Aug 2020 22:05:50 +0800</pubDate>
+      
+      <guid>https://logicskky.github.io/2020/note-git-2.%E9%85%8D%E7%BD%AE/</guid>
+      <description>Git 配置  配置文件的路径 用户信息 默认文本编辑器 默认分支的默认名称 查看（检查）配置  配置文件的路径  /etc/gitconfig（--system 选项） ~/.gitconfig 或 ~/.config/git/config（--global 选项） .git/config（--local 选项）  在执行 git config 时加上上面的三个不同选项的其中之一，会读写对应配置文件中的配置。
+从下往上，配置文件会依次覆盖。
+用户信息 安装好 Git 之后，必须要设置用户名和邮箱地址：
+$ git config --global user.name &amp;#34;User Name&amp;#34; $ git config --global user.email emailaddress@example.com 默认文本编辑器 当 Git 需要用户输入信息时，会调用默认的文本编辑器，Git 默认会使用操作系统默认的编辑器，当然也可以使用如下方式更改：
+$ git config --global core.editor nvim （设置默认编辑器为 NeoVim）
+默认分支的默认名称 使用如下命令更改默认分支的默认名称：
+git config --global init.defaultBranch branchName 查看（检查）配置 使用如下命令列出 Git 当时能找到的所有配置：
+$ git config --list user.</description>
+    </item>
     
     <item>
       <title>[Note] Git-1.基础知识</title>

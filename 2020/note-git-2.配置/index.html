@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+  <meta http-equiv="content-type" content="text/html;charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noodp"/>
+  <meta name="author" content="Wang Kefeng">
+  <meta name="description" content="LogicSkky&#39;s Blog.">
+  <meta name="keywords" content="logicskky,blog,c,linux,vim,博客">
+  
+  <link rel="prev" href="https://logicskky.github.io/2020/note-git-1.%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/" />
+  
+  <link rel="canonical" href="https://logicskky.github.io/2020/note-git-2.%E9%85%8D%E7%BD%AE/" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <title>
+       
+       
+           [Nore] Git-2.配置 | LogicSkky&#39;s Blog
+       
+  </title>
+  <meta name="title" content="[Nore] Git-2.配置 | LogicSkky&#39;s Blog">
+    
+  
+  <link rel="stylesheet" href="/font/iconfont.css">
+  <link rel="stylesheet" href="/css/main.min.css">
+
+
+  
+  
+ 
+
+<script type="application/ld+json">
+ "@context" : "http://schema.org",
+    "@type" : "BlogPosting",
+    "mainEntityOfPage": {
+         "@type": "WebPage",
+         "@id": "https:\/\/logicskky.github.io"
+    },
+    "articleSection" : "posts",
+    "name" : "[Nore] Git-2.配置",
+    "headline" : "[Nore] Git-2.配置",
+    "description" : "Git 配置  配置文件的路径 用户信息 默认文本编辑器 默认分支的默认名称 查看（检查）配置  配置文件的路径  \/etc\/gitconfig（--system 选项） ~\/.gitconfig 或 ~\/.config\/git\/config（--global 选项） .git\/config（--local 选项）  在执行 git config 时加上上面的三个不同选项的其中之一，会读写对应配置文件中的配置。\n从下往上，配置文件会依次覆盖。\n用户信息 安装好 Git 之后，必须要设置用户名和邮箱地址：\n$ git config --global user.name \u0026#34;User Name\u0026#34; $ git config --global user.email emailaddress@example.com 默认文本编辑器 当 Git 需要用户输入信息时，会调用默认的文本编辑器，Git 默认会使用操作系统默认的编辑器，当然也可以使用如下方式更改：\n$ git config --global core.editor nvim （设置默认编辑器为 NeoVim）\n默认分支的默认名称 使用如下命令更改默认分支的默认名称：\ngit config --global init.defaultBranch branchName 查看（检查）配置 使用如下命令列出 Git 当时能找到的所有配置：\n$ git config --list user.",
+    "inLanguage" : "zh-cn",
+    "author" : "Wang Kefeng",
+    "creator" : "Wang Kefeng",
+    "publisher": "Wang Kefeng",
+    "accountablePerson" : "Wang Kefeng",
+    "copyrightHolder" : "Wang Kefeng",
+    "copyrightYear" : "2020",
+    "datePublished": "2020-08-23 22:05:50 \u002b0800 CST",
+    "dateModified" : "2020-08-23 22:05:50 \u002b0800 CST",
+    "url" : "https:\/\/logicskky.github.io\/2020\/note-git-2.%E9%85%8D%E7%BD%AE\/",
+    "wordCount" : "70",
+    "keywords" : [ "Note","Git", "LogicSkky\u0027s Blog"]
+}
+</script>
+
+</head>
+
+  
+
+
+  <body class="">
+    <div class="wrapper">
+        <nav class="navbar">
+    <div class="container">
+        <div class="navbar-header header-logo">
+        	<a href="javascript:void(0);" class="theme-switch"><i class="iconfont icon-xihuan"></i></a>&nbsp;<a href="https://logicskky.github.io">LogicSkky&#39;s Blog</a>
+        </div>
+        <div class="menu navbar-right">
+                
+                
+                <a class="menu-item" href="/" title="">Home</a>
+                
+                <a class="menu-item" href="/posts/" title="">Blog</a>
+                
+                <a class="menu-item" href="/categories/" title="">Categories</a>
+                
+                <a class="menu-item" href="/tags/" title="">Tags</a>
+                
+                <a class="menu-item" href="/about/" title="">About</a>
+                
+        </div>
+    </div>
+</nav>
+<nav class="navbar-mobile" id="nav-mobile" style="display: none">
+     <div class="container">
+        <div class="navbar-header">
+            <div>  <a href="javascript:void(0);" class="theme-switch"><i class="iconfont icon-xihuan"></i></a>&nbsp;<a href="https://logicskky.github.io">LogicSkky&#39;s Blog</a></div>
+            <div class="menu-toggle">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+     
+          <div class="menu" id="mobile-menu">
+                
+                
+                <a class="menu-item" href="/" title="">Home</a>
+                
+                <a class="menu-item" href="/posts/" title="">Blog</a>
+                
+                <a class="menu-item" href="/categories/" title="">Categories</a>
+                
+                <a class="menu-item" href="/tags/" title="">Tags</a>
+                
+                <a class="menu-item" href="/about/" title="">About</a>
+                
+        </div>
+    </div>
+</nav>
+    	 <main class="main">
+          <div class="container">
+      		
+<article class="post-warp" itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">[Nore] Git-2.配置</h1>
+        <div class="post-meta">
+                Written by <a itemprop="name" href="https://logicskky.github.io" rel="author">Wang Kefeng</a> with ♥ 
+                <span class="post-time">
+                on <time datetime=2020-08-23 itemprop="datePublished">August 23, 2020</time>
+                </span>
+                in
+                <i class="iconfont icon-folder"></i>
+                <span class="post-category">
+                        <a href="https://logicskky.github.io/categories/note/"> Note </a>
+                        
+                </span>
+        </div>
+    </header>
+    <div class="post-content">
+        
+
+        
+
+        
+        
+     
+          
+          
+          
+
+          
+          
+          
+
+          <h1 id="git-配置">Git 配置</h1>
+<!-- vim-markdown-toc GFM -->
+<ul>
+<li><a href="#%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E7%9A%84%E8%B7%AF%E5%BE%84">配置文件的路径</a></li>
+<li><a href="#%E7%94%A8%E6%88%B7%E4%BF%A1%E6%81%AF">用户信息</a></li>
+<li><a href="#%E9%BB%98%E8%AE%A4%E6%96%87%E6%9C%AC%E7%BC%96%E8%BE%91%E5%99%A8">默认文本编辑器</a></li>
+<li><a href="#%E9%BB%98%E8%AE%A4%E5%88%86%E6%94%AF%E7%9A%84%E9%BB%98%E8%AE%A4%E5%90%8D%E7%A7%B0">默认分支的默认名称</a></li>
+<li><a href="#%E6%9F%A5%E7%9C%8B%E6%A3%80%E6%9F%A5%E9%85%8D%E7%BD%AE">查看（检查）配置</a></li>
+</ul>
+<!-- vim-markdown-toc -->
+<h2 id="配置文件的路径">配置文件的路径</h2>
+<ul>
+<li><code>/etc/gitconfig</code>（<code>--system</code> 选项）</li>
+<li><code>~/.gitconfig</code> 或 <code>~/.config/git/config</code>（<code>--global</code> 选项）</li>
+<li><code>.git/config</code>（<code>--local</code> 选项）</li>
+</ul>
+<p>在执行 <code>git config</code> 时加上上面的三个不同选项的其中之一，会读写对应配置文件中的配置。</p>
+<p>从下往上，配置文件会依次覆盖。</p>
+<h2 id="用户信息">用户信息</h2>
+<p>安装好 Git 之后，必须要设置用户名和邮箱地址：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-zsh" data-lang="zsh">$ git config --global user.name <span style="color:#e6db74">&#34;User Name&#34;</span>
+$ git config --global user.email emailaddress@example.com
+</code></pre></div><h2 id="默认文本编辑器">默认文本编辑器</h2>
+<p>当 Git 需要用户输入信息时，会调用默认的文本编辑器，Git 默认会使用操作系统默认的编辑器，当然也可以使用如下方式更改：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-zsh" data-lang="zsh">$ git config --global core.editor nvim
+</code></pre></div><p>（设置默认编辑器为 NeoVim）</p>
+<h2 id="默认分支的默认名称">默认分支的默认名称</h2>
+<p>使用如下命令更改默认分支的默认名称：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-zsh" data-lang="zsh">git config --global init.defaultBranch branchName
+</code></pre></div><h2 id="查看检查配置">查看（检查）配置</h2>
+<p>使用如下命令列出 Git 当时能找到的所有配置：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-zsh" data-lang="zsh">$ git config --list
+user.name<span style="color:#f92672">=</span>User Name
+user.email<span style="color:#f92672">=</span>emailaddress@example.com
+core.editor<span style="color:#f92672">=</span>nvim
+</code></pre></div>
+    </div>
+
+    <div class="post-copyright">
+             
+            <p class="copyright-item">
+                <span>Author:</span>
+                <span>Wang Kefeng </span>
+                </p>
+            
+           
+             
+            <p class="copyright-item">
+                    <span>Link:</span>
+                    <a href=https://logicskky.github.io/2020/note-git-2.%E9%85%8D%E7%BD%AE/>https://logicskky.github.io/2020/note-git-2.%E9%85%8D%E7%BD%AE/</span>
+            </p>
+            
+             
+            <p class="copyright-item lincese">
+                本文采用<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/" target="_blank">知识共享署名-非商业性使用 4.0 国际许可协议</a>进行许可
+            </p>
+            
+    </div>
+
+  
+    <div class="post-tags">
+        
+            <section>
+            <i class="iconfont icon-tag"></i>Tag(s): 
+            
+            <span class="tag"><a href="https://logicskky.github.io/tags/note/">
+                    #Note</a></span>
+            
+            <span class="tag"><a href="https://logicskky.github.io/tags/git/">
+                    #Git</a></span>
+            
+            </section>
+        
+        <section>
+                <a href="javascript:window.history.back();">back</a></span> · 
+                <span><a href="https://logicskky.github.io">home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav">
+        
+        <a href="https://logicskky.github.io/2020/note-git-1.%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/" class="prev" rel="prev" title="[Note] Git-1.基础知识"><i class="iconfont icon-left"></i>&nbsp;[Note] Git-1.基础知识</a>
+         
+        
+    </div>
+
+    <div class="post-comment">
+          
+                 
+          
+    </div>
+</article>
+          </div>
+		   </main>
+      <footer class="footer">
+    <div class="copyright">
+        &copy;
+        
+        <span itemprop="copyrightYear">2020 - 2020</span>
+        
+        <span class="with-love">
+    	 <i class="iconfont icon-love"></i> 
+         </span>
+         
+            <span class="author" itemprop="copyrightHolder"><a href="https://logicskky.github.io">Wang Kefeng</a> | </span> 
+         
+
+         
+		  <span>Powered by <a href="https://gohugo.io/" target="_blank" rel="external nofollow">Hugo</a> & <a href="https://github.com/liuzc/leaveit" target="_blank" rel="external nofollow">LeaveIt</a></span> 
+    </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+    <script src="/js/vendor_no_gallery.min.js" async=""></script>
+    
+  
+
+
+
+     </div>
+  </body>
+</html>
