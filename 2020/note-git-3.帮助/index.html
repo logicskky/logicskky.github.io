@@ -9,9 +9,9 @@
   <meta name="description" content="LogicSkky&#39;s Blog.">
   <meta name="keywords" content="logicskky,blog,c,linux,vim,博客">
   
-  <link rel="prev" href="https://logicskky.github.io/2020/note-git-1.%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/" />
-  <link rel="next" href="https://logicskky.github.io/2020/note-git-3.%E5%B8%AE%E5%8A%A9/" />
-  <link rel="canonical" href="https://logicskky.github.io/2020/note-git-2.%E9%85%8D%E7%BD%AE/" />
+  <link rel="prev" href="https://logicskky.github.io/2020/note-git-2.%E9%85%8D%E7%BD%AE/" />
+  
+  <link rel="canonical" href="https://logicskky.github.io/2020/note-git-3.%E5%B8%AE%E5%8A%A9/" />
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -22,10 +22,10 @@
   <title>
        
        
-           [Nore] Git-2.配置 | LogicSkky&#39;s Blog
+           [Note] Git-3.帮助 | LogicSkky&#39;s Blog
        
   </title>
-  <meta name="title" content="[Nore] Git-2.配置 | LogicSkky&#39;s Blog">
+  <meta name="title" content="[Note] Git-3.帮助 | LogicSkky&#39;s Blog">
     
   
   <link rel="stylesheet" href="/font/iconfont.css">
@@ -44,9 +44,9 @@
          "@id": "https:\/\/logicskky.github.io"
     },
     "articleSection" : "posts",
-    "name" : "[Nore] Git-2.配置",
-    "headline" : "[Nore] Git-2.配置",
-    "description" : "Git 配置  配置文件的路径 用户信息 默认文本编辑器 默认分支的默认名称 查看（检查）配置  配置文件的路径  \/etc\/gitconfig（--system 选项） ~\/.gitconfig 或 ~\/.config\/git\/config（--global 选项） .git\/config（--local 选项）  在执行 git config 时加上上面的三个不同选项的其中之一，会读写对应配置文件中的配置。\n从下往上，配置文件会依次覆盖。\n用户信息 安装好 Git 之后，必须要设置用户名和邮箱地址：\n$ git config --global user.name \u0026#34;User Name\u0026#34; $ git config --global user.email emailaddress@example.com 默认文本编辑器 当 Git 需要用户输入信息时，会调用默认的文本编辑器，Git 默认会使用操作系统默认的编辑器，当然也可以使用如下方式更改：\n$ git config --global core.editor nvim （设置默认编辑器为 NeoVim）\n默认分支的默认名称 使用如下命令更改默认分支的默认名称：\ngit config --global init.defaultBranch branchName 查看（检查）配置 使用如下命令列出 Git 当时能找到的所有配置：\n$ git config --list user.",
+    "name" : "[Note] Git-3.帮助",
+    "headline" : "[Note] Git-3.帮助",
+    "description" : "Git 帮助  查看完整手册 查看简短的可用选项快速参考 联网获取帮助  查看完整手册 以下三种方式是等效的：\n$ git help \u0026lt;verb\u0026gt; $ git \u0026lt;verb\u0026gt; --help $ man git-\u0026lt;verb\u0026gt; e.g.:\n$ git help config $ git config --help $ man git-config 查看简短的可用选项快速参考 使用如下命令查看 Git 的某个操作的可用参数、使用方法和简单描述：\n$ git \u0026lt;verb\u0026gt; -h 联网获取帮助 通过搜索引擎总是能获取到一些有用的资料，IRC 的 #git 和 github 都是很好的可以寻求帮助的频道。当然还有各个 QQ 群等。",
     "inLanguage" : "zh-cn",
     "author" : "Wang Kefeng",
     "creator" : "Wang Kefeng",
@@ -54,10 +54,10 @@
     "accountablePerson" : "Wang Kefeng",
     "copyrightHolder" : "Wang Kefeng",
     "copyrightYear" : "2020",
-    "datePublished": "2020-08-23 22:05:50 \u002b0800 CST",
-    "dateModified" : "2020-08-23 22:05:50 \u002b0800 CST",
-    "url" : "https:\/\/logicskky.github.io\/2020\/note-git-2.%E9%85%8D%E7%BD%AE\/",
-    "wordCount" : "70",
+    "datePublished": "2020-08-23 22:17:51 \u002b0800 CST",
+    "dateModified" : "2020-08-23 22:17:51 \u002b0800 CST",
+    "url" : "https:\/\/logicskky.github.io\/2020\/note-git-3.%E5%B8%AE%E5%8A%A9\/",
+    "wordCount" : "47",
     "keywords" : [ "Note","Git", "LogicSkky\u0027s Blog"]
 }
 </script>
@@ -120,7 +120,7 @@
       		
 <article class="post-warp" itemscope itemtype="http://schema.org/Article">
     <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">[Nore] Git-2.配置</h1>
+        <h1 class="post-title" itemprop="name headline">[Note] Git-3.帮助</h1>
         <div class="post-meta">
                 Written by <a itemprop="name" href="https://logicskky.github.io" rel="author">Wang Kefeng</a> with ♥ 
                 <span class="post-time">
@@ -150,42 +150,29 @@
           
           
 
-          <h1 id="git-配置">Git 配置</h1>
+          <h1 id="git-帮助">Git 帮助</h1>
 <!-- vim-markdown-toc GFM -->
 <ul>
-<li><a href="#%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E7%9A%84%E8%B7%AF%E5%BE%84">配置文件的路径</a></li>
-<li><a href="#%E7%94%A8%E6%88%B7%E4%BF%A1%E6%81%AF">用户信息</a></li>
-<li><a href="#%E9%BB%98%E8%AE%A4%E6%96%87%E6%9C%AC%E7%BC%96%E8%BE%91%E5%99%A8">默认文本编辑器</a></li>
-<li><a href="#%E9%BB%98%E8%AE%A4%E5%88%86%E6%94%AF%E7%9A%84%E9%BB%98%E8%AE%A4%E5%90%8D%E7%A7%B0">默认分支的默认名称</a></li>
-<li><a href="#%E6%9F%A5%E7%9C%8B%E6%A3%80%E6%9F%A5%E9%85%8D%E7%BD%AE">查看（检查）配置</a></li>
+<li><a href="#%E6%9F%A5%E7%9C%8B%E5%AE%8C%E6%95%B4%E6%89%8B%E5%86%8C">查看完整手册</a></li>
+<li><a href="#%E6%9F%A5%E7%9C%8B%E7%AE%80%E7%9F%AD%E7%9A%84%E5%8F%AF%E7%94%A8%E9%80%89%E9%A1%B9%E5%BF%AB%E9%80%9F%E5%8F%82%E8%80%83">查看简短的可用选项快速参考</a></li>
+<li><a href="#%E8%81%94%E7%BD%91%E8%8E%B7%E5%8F%96%E5%B8%AE%E5%8A%A9">联网获取帮助</a></li>
 </ul>
 <!-- vim-markdown-toc -->
-<h2 id="配置文件的路径">配置文件的路径</h2>
-<ul>
-<li><code>/etc/gitconfig</code>（<code>--system</code> 选项）</li>
-<li><code>~/.gitconfig</code> 或 <code>~/.config/git/config</code>（<code>--global</code> 选项）</li>
-<li><code>.git/config</code>（<code>--local</code> 选项）</li>
-</ul>
-<p>在执行 <code>git config</code> 时加上上面的三个不同选项的其中之一，会读写对应配置文件中的配置。</p>
-<p>从下往上，配置文件会依次覆盖。</p>
-<h2 id="用户信息">用户信息</h2>
-<p>安装好 Git 之后，必须要设置用户名和邮箱地址：</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-zsh" data-lang="zsh">$ git config --global user.name <span style="color:#e6db74">&#34;User Name&#34;</span>
-$ git config --global user.email emailaddress@example.com
-</code></pre></div><h2 id="默认文本编辑器">默认文本编辑器</h2>
-<p>当 Git 需要用户输入信息时，会调用默认的文本编辑器，Git 默认会使用操作系统默认的编辑器，当然也可以使用如下方式更改：</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-zsh" data-lang="zsh">$ git config --global core.editor nvim
-</code></pre></div><p>（设置默认编辑器为 NeoVim）</p>
-<h2 id="默认分支的默认名称">默认分支的默认名称</h2>
-<p>使用如下命令更改默认分支的默认名称：</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-zsh" data-lang="zsh">git config --global init.defaultBranch branchName
-</code></pre></div><h2 id="查看检查配置">查看（检查）配置</h2>
-<p>使用如下命令列出 Git 当时能找到的所有配置：</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-zsh" data-lang="zsh">$ git config --list
-user.name<span style="color:#f92672">=</span>User Name
-user.email<span style="color:#f92672">=</span>emailaddress@example.com
-core.editor<span style="color:#f92672">=</span>nvim
-</code></pre></div>
+<h2 id="查看完整手册">查看完整手册</h2>
+<p>以下三种方式是等效的：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-zsh" data-lang="zsh">$ git help &lt;verb&gt;
+$ git &lt;verb&gt; --help
+$ man git-&lt;verb&gt;
+</code></pre></div><p>e.g.:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-zsh" data-lang="zsh">$ git help config
+$ git config --help
+$ man git-config
+</code></pre></div><h2 id="查看简短的可用选项快速参考">查看简短的可用选项快速参考</h2>
+<p>使用如下命令查看 Git 的某个操作的可用参数、使用方法和简单描述：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-zsh" data-lang="zsh">$ git &lt;verb&gt; -h
+</code></pre></div><h2 id="联网获取帮助">联网获取帮助</h2>
+<p>通过搜索引擎总是能获取到一些有用的资料，IRC 的 <code>#git</code> 和 <code>github</code> 都是很好的可以寻求帮助的频道。当然还有各个 QQ 群等。</p>
+
     </div>
 
     <div class="post-copyright">
@@ -199,7 +186,7 @@ core.editor<span style="color:#f92672">=</span>nvim
              
             <p class="copyright-item">
                     <span>Link:</span>
-                    <a href=https://logicskky.github.io/2020/note-git-2.%E9%85%8D%E7%BD%AE/>https://logicskky.github.io/2020/note-git-2.%E9%85%8D%E7%BD%AE/</span>
+                    <a href=https://logicskky.github.io/2020/note-git-3.%E5%B8%AE%E5%8A%A9/>https://logicskky.github.io/2020/note-git-3.%E5%B8%AE%E5%8A%A9/</span>
             </p>
             
              
@@ -231,10 +218,8 @@ core.editor<span style="color:#f92672">=</span>nvim
 
     <div class="post-nav">
         
-        <a href="https://logicskky.github.io/2020/note-git-1.%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/" class="prev" rel="prev" title="[Note] Git-1.基础知识"><i class="iconfont icon-left"></i>&nbsp;[Note] Git-1.基础知识</a>
+        <a href="https://logicskky.github.io/2020/note-git-2.%E9%85%8D%E7%BD%AE/" class="prev" rel="prev" title="[Nore] Git-2.配置"><i class="iconfont icon-left"></i>&nbsp;[Nore] Git-2.配置</a>
          
-        
-        <a href="https://logicskky.github.io/2020/note-git-3.%E5%B8%AE%E5%8A%A9/" class="next" rel="next" title="[Note] Git-3.帮助">[Note] Git-3.帮助&nbsp;<i class="iconfont icon-right"></i></a>
         
     </div>
 

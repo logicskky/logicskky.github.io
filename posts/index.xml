@@ -6,10 +6,22 @@
     <description>Recent content in Posts on LogicSkky&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sun, 23 Aug 2020 22:05:50 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 23 Aug 2020 22:17:51 +0800</lastBuildDate>
     
 	<atom:link href="https://logicskky.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>[Note] Git-3.帮助</title>
+      <link>https://logicskky.github.io/2020/note-git-3.%E5%B8%AE%E5%8A%A9/</link>
+      <pubDate>Sun, 23 Aug 2020 22:17:51 +0800</pubDate>
+      
+      <guid>https://logicskky.github.io/2020/note-git-3.%E5%B8%AE%E5%8A%A9/</guid>
+      <description>Git 帮助  查看完整手册 查看简短的可用选项快速参考 联网获取帮助  查看完整手册 以下三种方式是等效的：
+$ git help &amp;lt;verb&amp;gt; $ git &amp;lt;verb&amp;gt; --help $ man git-&amp;lt;verb&amp;gt; e.g.:
+$ git help config $ git config --help $ man git-config 查看简短的可用选项快速参考 使用如下命令查看 Git 的某个操作的可用参数、使用方法和简单描述：
+$ git &amp;lt;verb&amp;gt; -h 联网获取帮助 通过搜索引擎总是能获取到一些有用的资料，IRC 的 #git 和 github 都是很好的可以寻求帮助的频道。当然还有各个 QQ 群等。</description>
+    </item>
     
     <item>
       <title>[Nore] Git-2.配置</title>
