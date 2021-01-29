@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Notes on LogicSkky&#39;s Blog</title>
+    <link>https://logicskky.github.io/categories/notes/</link>
+    <description>Recent content in Notes on LogicSkky&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Fri, 29 Jan 2021 21:58:55 +0800</lastBuildDate><atom:link href="https://logicskky.github.io/categories/notes/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>[C] 1 语法基本介绍</title>
+      <link>https://logicskky.github.io/2021/c-1-basic/</link>
+      <pubDate>Fri, 29 Jan 2021 21:58:55 +0800</pubDate>
+      
+      <guid>https://logicskky.github.io/2021/c-1-basic/</guid>
+      <description>这里作为 C 语言的简单概述，详细语法细节等内容见后面的笔记。
+Hello World #include &amp;lt;stdio.h&amp;gt;int main(void) { printf(&amp;#34;hello, world\n&amp;#34;); return 0; } </description>
+    </item>
+    
+    <item>
+      <title>[C] 0 简介</title>
+      <link>https://logicskky.github.io/2021/c-0-introduction/</link>
+      <pubDate>Fri, 29 Jan 2021 21:55:50 +0800</pubDate>
+      
+      <guid>https://logicskky.github.io/2021/c-0-introduction/</guid>
+      <description>C 语言 C 语言的历史 </description>
+    </item>
+    
+  </channel>
+</rss>
