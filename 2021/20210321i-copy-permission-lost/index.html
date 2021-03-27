@@ -9,9 +9,9 @@
   <meta name="description" content="LogicSkky&#39;s Blog.">
   <meta name="keywords" content="logicskky,blog,c,linux,vim,博客">
   
-  <link rel="prev" href="https://logicskky.github.io/2020/keyboard-gk61/" />
-  <link rel="next" href="https://logicskky.github.io/2021/copy-permission-lost/" />
-  <link rel="canonical" href="https://logicskky.github.io/2021/c-0-introduction/" />
+  <link rel="prev" href="https://logicskky.github.io/2021/20210129i-c-0-introduction/" />
+  
+  <link rel="canonical" href="https://logicskky.github.io/2021/20210321i-copy-permission-lost/" />
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -22,10 +22,10 @@
   <title>
        
        
-           [C] 0 简介 | LogicSkky&#39;s Blog
+           Linux 下的文件复制时权限丢失的解决方案 | LogicSkky&#39;s Blog
        
   </title>
-  <meta name="title" content="[C] 0 简介 | LogicSkky&#39;s Blog">
+  <meta name="title" content="Linux 下的文件复制时权限丢失的解决方案 | LogicSkky&#39;s Blog">
     
   
   <link rel="stylesheet" href="/font/iconfont.css">
@@ -44,9 +44,9 @@
          "@id": "https:\/\/logicskky.github.io"
     },
     "articleSection" : "posts",
-    "name" : "[C] 0 简介",
-    "headline" : "[C] 0 简介",
-    "description" : "C 语言 C 语言的历史 ",
+    "name" : "Linux 下的文件复制时权限丢失的解决方案",
+    "headline" : "Linux 下的文件复制时权限丢失的解决方案",
+    "description" : "前言 最近换了新电脑，在做数据迁移时发现，所有的复制到新电脑的文件权限全部都是 777。可 在原电脑上权限是正常的，便猜测可能是复制过程中导致权限丢失。一番百度，最后找到了 解决的方法（原文地址：拷贝文件：linux-\u0026gt;windows-\u0026gt;linux，丢失文件权限解决方法）。\n方法简述 操作其实很简单，只需要先把需要拷贝的文件用 tar 压缩打包，之后再复制压缩包，到达 目标位置后再将压缩包解压缩，权限就能保留了。\n具体操作（仅供参考）  预处理：将需要拷贝的文件放到 backup 目录下； 压缩：tar -cvf backup.tar backup； 复制：将 backup.tar 复制到目标位置； 解压：tar -xvf backup.tar。  ",
     "inLanguage" : "zh-cn",
     "author" : "Wang Kefeng",
     "creator" : "Wang Kefeng",
@@ -54,11 +54,11 @@
     "accountablePerson" : "Wang Kefeng",
     "copyrightHolder" : "Wang Kefeng",
     "copyrightYear" : "2021",
-    "datePublished": "2021-01-29 21:55:50 \u002b0800 CST",
-    "dateModified" : "2021-01-29 21:55:50 \u002b0800 CST",
-    "url" : "https:\/\/logicskky.github.io\/2021\/c-0-introduction\/",
-    "wordCount" : "4",
-    "keywords" : [ "c","notes", "LogicSkky\u0027s Blog"]
+    "datePublished": "2021-03-21 22:01:56 \u002b0800 CST",
+    "dateModified" : "2021-03-21 22:01:56 \u002b0800 CST",
+    "url" : "https:\/\/logicskky.github.io\/2021\/20210321i-copy-permission-lost\/",
+    "wordCount" : "24",
+    "keywords" : [ "Linux", "LogicSkky\u0027s Blog"]
 }
 </script>
 
@@ -120,16 +120,16 @@
       		
 <article class="post-warp" itemscope itemtype="http://schema.org/Article">
     <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">[C] 0 简介</h1>
+        <h1 class="post-title" itemprop="name headline">Linux 下的文件复制时权限丢失的解决方案</h1>
         <div class="post-meta">
                 Written by <a itemprop="name" href="https://logicskky.github.io" rel="author">Wang Kefeng</a> with ♥ 
                 <span class="post-time">
-                on <time datetime=2021-01-29 itemprop="datePublished">January 29, 2021</time>
+                on <time datetime=2021-03-21 itemprop="datePublished">March 21, 2021</time>
                 </span>
                 in
                 <i class="iconfont icon-folder"></i>
                 <span class="post-category">
-                        <a href="https://logicskky.github.io/categories/notes/"> Notes </a>
+                        <a href="https://logicskky.github.io/categories/linux/"> Linux </a>
                         
                 </span>
         </div>
@@ -150,8 +150,20 @@
           
           
 
-          <h2 id="c-语言">C 语言</h2>
-<h2 id="c-语言的历史">C 语言的历史</h2>
+          <h2 id="前言">前言</h2>
+<p>最近换了新电脑，在做数据迁移时发现，所有的复制到新电脑的文件权限全部都是 777。可
+在原电脑上权限是正常的，便猜测可能是复制过程中导致权限丢失。一番百度，最后找到了
+解决的方法（原文地址：<a href="https://blog.csdn.net/u010969226/article/details/11678527">拷贝文件：linux-&gt;windows-&gt;linux，丢失文件权限解决方法</a>）。</p>
+<h2 id="方法简述">方法简述</h2>
+<p>操作其实很简单，只需要先把需要拷贝的文件用 tar 压缩打包，之后再复制压缩包，到达
+目标位置后再将压缩包解压缩，权限就能保留了。</p>
+<h2 id="具体操作仅供参考">具体操作（仅供参考）</h2>
+<ul>
+<li>预处理：将需要拷贝的文件放到 backup 目录下；</li>
+<li>压缩：<code>tar -cvf backup.tar backup</code>；</li>
+<li>复制：将 backup.tar 复制到目标位置；</li>
+<li>解压：<code>tar -xvf backup.tar</code>。</li>
+</ul>
 
     </div>
 
@@ -166,7 +178,7 @@
              
             <p class="copyright-item">
                     <span>Link:</span>
-                    <a href=https://logicskky.github.io/2021/c-0-introduction/>https://logicskky.github.io/2021/c-0-introduction/</span>
+                    <a href=https://logicskky.github.io/2021/20210321i-copy-permission-lost/>https://logicskky.github.io/2021/20210321i-copy-permission-lost/</span>
             </p>
             
              
@@ -182,11 +194,8 @@
             <section>
             <i class="iconfont icon-tag"></i>Tag(s): 
             
-            <span class="tag"><a href="https://logicskky.github.io/tags/c/">
-                    #c</a></span>
-            
-            <span class="tag"><a href="https://logicskky.github.io/tags/notes/">
-                    #notes</a></span>
+            <span class="tag"><a href="https://logicskky.github.io/tags/linux/">
+                    #Linux</a></span>
             
             </section>
         
@@ -198,10 +207,8 @@
 
     <div class="post-nav">
         
-        <a href="https://logicskky.github.io/2020/keyboard-gk61/" class="prev" rel="prev" title="第一把键盘——GK61"><i class="iconfont icon-left"></i>&nbsp;第一把键盘——GK61</a>
+        <a href="https://logicskky.github.io/2021/20210129i-c-0-introduction/" class="prev" rel="prev" title="[C] 0 简介"><i class="iconfont icon-left"></i>&nbsp;[C] 0 简介</a>
          
-        
-        <a href="https://logicskky.github.io/2021/copy-permission-lost/" class="next" rel="next" title="Linux 下的文件复制时权限丢失的解决方案">Linux 下的文件复制时权限丢失的解决方案&nbsp;<i class="iconfont icon-right"></i></a>
         
     </div>
 
