@@ -24,7 +24,7 @@
       <pubDate>Fri, 29 Jan 2021 21:55:50 +0800</pubDate>
       
       <guid>https://logicskky.github.io/2021/20210129i-c-0-introduction/</guid>
-      <description>C 语言 C 语言的历史 </description>
+      <description>C 语言诞生于美国的贝尔实验室，是一门面向过程的计算机编程语言。C 语言的设计目 标是提供一种能以简易的方式编译、处理低级存储器、仅产生少量的机器码以及不需要任何 运行环境支持便能运行的编程语言。C 语言的运行速度很快。不过代码相较于其他编程语言 更繁琐一些，因为 C 语言比较接近底层。</description>
     </item>
     
     <item>
